@@ -1,0 +1,17 @@
+{
+    "name": "Twitter Miruna",
+    "version": "1.0.0",
+    "manifest_version": 2,
+    "description": "Twitterを見たら叱ってくれます。",
+    "icons": {
+      "16": "sample.png",
+      "48": "sample.png",
+      "128": "sample.png"
+    },
+    "content_scripts": [{
+      "matches": ["https://twitter.com/"],
+      "js": [
+        "content.js"
+      ]
+    }]
+}
